@@ -54,7 +54,7 @@ function ResturantContainer() {
     ]
 
   return (
-    <div className='mt-20 flex gap-10 flex-wrap max-lg:flex-wrap'>
+    <div className='mt-20 flex gap-10 flex-wrap justify-start  md:justify-center'>
     {cards_info.map((card, index) =>
         <ReviewCard
             key={index}
