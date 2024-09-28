@@ -12,15 +12,19 @@ import MailList from './components/MailList'
 import LatestVideoSection from './components/LatestVideoSection'
 import FoodLoversSection from './components/FoodLoversSection'
 import Footer from './components/Footer'
-
+import ExpandedNav from './components/ExpandedNav'
+import React from 'react'
 function App() {
+let [exapnd,SetExpand] = React.useState("none")
 
   return (
     <div>
+       <ExpandedNav display={exapnd} SetExpand={SetExpand} />
       <div className=' xl:px-40 md:px-10 px-4'>
+       
         <BackgroundRectangle />
 
-        <Navbar />
+        <Navbar SetExpand={SetExpand}/>
         <Homepage />
         <Media />
         <FeaturedBanner />

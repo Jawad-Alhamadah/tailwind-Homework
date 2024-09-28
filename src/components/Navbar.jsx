@@ -1,6 +1,8 @@
 import React from "react";
 import SocialMediaBar from "./SocialMediaBar";
 function Navbar(props) {
+
+
     return (
         <nav className="flex mt-4 ">
             <div className="w-[60%] max-md:w-[60%]  max-sm:w-[70%] flex">
@@ -21,7 +23,9 @@ function Navbar(props) {
             <div className="max-md:w-[40%] w-[40%]  max-sm:w-[30%] flex justify-end  md:justify-end">
                 <ul className="flex py-7 gap-8">
                     <li>
-                        <div className=" lg:hidden  hover:bg-[#e2a996] hover:cursor-pointer bg-[#be7c68] size-14 text-2xl text-white rounded-full before:content-['\f0c9'] font-[FontAwesome] flex justify-center items-center "></div>
+                        <div className=" lg:hidden  hover:bg-[#e2a996] hover:cursor-pointer bg-[#be7c68] size-14 text-2xl text-white rounded-full before:content-['\f0c9'] font-[FontAwesome] flex justify-center items-center "
+                        onClick={()=>props.SetExpand("block")}
+                        ></div>
                     </li>
                     <li className="max-lg:hidden">
                         <SocialMediaBar color="#ffffff"/>
