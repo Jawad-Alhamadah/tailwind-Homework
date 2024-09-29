@@ -1,5 +1,6 @@
 import React from "react";
 import SocialMediaBar from "./SocialMediaBar";
+import { Link } from "react-router-dom";
 function Navbar(props) {
 
 
@@ -13,11 +14,23 @@ function Navbar(props) {
                             alt="website logo DA"
                         />
                     </li>
-                    <li className="text-coffeeBrown max-lg:hidden ">HOME</li>
+
+                    <Link to="/">
+                    <li className="text-coffeeBrown max-lg:hidden">HOME</li>
+                    </Link>
+                   
+                    
+                    <Link to="/about">
                     <li className="max-lg:hidden">ABOUT</li>
+                    </Link>
+
+    
                     <li className="max-lg:hidden">REVIEWS</li>
                     <li className="max-lg:hidden">VIDEOS</li>
+                    <Link to="/contact">
                     <li className="max-lg:hidden">CONTACT</li>
+                    </Link>
+                    
                 </ul>
             </div>
             <div className="max-md:w-[40%] w-[40%]  max-sm:w-[30%] flex justify-end  md:justify-end">
